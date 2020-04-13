@@ -14,9 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 public class HomeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("**HomeServlet doGet() called**");
 		PrintWriter out = response.getWriter();
@@ -24,9 +21,6 @@ public class HomeServlet extends HttpServlet {
 		out.println(request.getAttribute("message"));
 	}
 
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("**HomeServlet doPost() called**");
 		PrintWriter out = response.getWriter();
