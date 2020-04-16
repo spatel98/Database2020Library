@@ -18,11 +18,19 @@
 	<servlet>
 		<servlet-name>LoginServlet</servlet-name>
 		<servlet-class>com.sawan.Database2020.LoginServlet</servlet-class>
-		<load-on-startup>0</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>LoginServlet</servlet-name>
 		<url-pattern>/LoginServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeLoginServlet</servlet-name>
+		<servlet-class>com.sawan.Database2020.EmployeeLoginServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeLoginServlet</servlet-name>
+		<url-pattern>/EmployeeLoginServlet</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
@@ -42,4 +50,31 @@
 		<servlet-name>HomeServlet</servlet-name>
 		<url-pattern>/HomeServlet</url-pattern>
 	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EmployeeHomeServlet</servlet-name>
+		<servlet-class>com.sawan.Database2020.EmployeeHomeServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EmployeeHomeServlet</servlet-name>
+		<url-pattern>/EmployeeHomeServlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>LogoutServlet</servlet-name>
+		<servlet-class>com.sawan.Database2020.LogoutServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutServlet</servlet-name>
+		<url-pattern>/LogoutServlet</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+    	<filter-name>ValidateUserSession</filter-name>
+    	<filter-class>com.sawan.Database2020.ValidateUserSession</filter-class>
+  	</filter>
+  	<filter-mapping>
+    	<filter-name>ValidateUserSession</filter-name>
+    	<url-pattern>/ValidateUserSession</url-pattern>
+  	</filter-mapping>
 </web-app>
