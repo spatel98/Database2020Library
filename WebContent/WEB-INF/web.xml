@@ -43,21 +43,21 @@
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>HomeServlet</servlet-name>
-		<servlet-class>com.sawan.Database2020.HomeServlet</servlet-class>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<servlet-class>com.sawan.Database2020.ForgotPasswordServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>HomeServlet</servlet-name>
-		<url-pattern>/HomeServlet</url-pattern>
+		<servlet-name>ForgotPasswordServlet</servlet-name>
+		<url-pattern>/ForgotPasswordServlet</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
-		<servlet-name>EmployeeHomeServlet</servlet-name>
-		<servlet-class>com.sawan.Database2020.EmployeeHomeServlet</servlet-class>
+		<servlet-name>EmployeeForgotPasswordServlet</servlet-name>
+		<servlet-class>com.sawan.Database2020.EmployeeForgotPasswordServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>EmployeeHomeServlet</servlet-name>
-		<url-pattern>/EmployeeHomeServlet</url-pattern>
+		<servlet-name>EmployeeForgotPasswordServlet</servlet-name>
+		<url-pattern>/EmployeeForgotPasswordServlet</url-pattern>
 	</servlet-mapping>
 	
 	<servlet>
