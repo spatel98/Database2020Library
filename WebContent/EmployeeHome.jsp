@@ -70,6 +70,7 @@
                 <td><%=rs.getString("ItemCount") %></td>
                 <td> 
                 	<a href='TableEdit.jsp?u=<%=rs.getString("BookId") %>' class="btn btn-warning">Edit</a>
+                	<a href='TableDelete.jsp?d=<%=rs.getString("BookId") %>' class="btn btn-danger">Delete</a>
                 </td>
                 
             </tr>
