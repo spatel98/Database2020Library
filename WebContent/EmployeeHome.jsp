@@ -51,6 +51,7 @@
              <th>ItemLocation</th>
              <th>ReportDate</th>
              <th>ItemCount</th>
+             <th></th>
           </tr>
       </thead>
       <tbody>
@@ -67,6 +68,10 @@
                 <td><%=rs.getString("ItemLocation") %></td>
                 <td><%=rs.getString("ReportDate") %></td>
                 <td><%=rs.getString("ItemCount") %></td>
+                <td> 
+                	<a href='TableEdit.jsp?u=<%=rs.getString("BookId") %>' class="btn btn-warning">Edit</a>
+                </td>
+                
             </tr>
             <%}%>
            </tbody>
