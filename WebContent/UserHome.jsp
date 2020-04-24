@@ -27,14 +27,6 @@
 		<h1 class="title">Bull Books</h1>
 	</div>
 	<img class="center" src="./img/bullBook.png" />
-	<button class="center" onclick="redir()">Add New Book</button>
-	
-	<script>
-	function redir() {
-		window.location.href = "addNew.jsp"
-	}
-	</script>
-	
 	<br> <br>
     <%
     try
