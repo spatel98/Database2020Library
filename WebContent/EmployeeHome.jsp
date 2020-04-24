@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Jsp Sample</title>
+    <title>Employee Home</title>
     <%@page import="java.sql.*"%>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css"/>
@@ -23,12 +23,22 @@
     </nav>
 </header>
 <body>
-
+	
 	<div class="entry-title-wrap">
-		<h1 class="title">Bull Books</h1>
+		<h1 class="child">Bull Books</h1>
 	</div>
-
+	
 	<img class="center" src="./img/bullBook.png" />
+	
+	<div class="entry-title-wrap">
+		<button type="button" class="btn btn-success btn-block" onclick="redir()">Add New Book</button>
+	</div>
+	
+	<script>
+	function redir() {
+		window.location.href = "addNew.jsp"
+	}
+	</script>
 	
 	<br> <br>
     <%
