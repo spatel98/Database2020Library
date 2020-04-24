@@ -8,6 +8,7 @@ body,html{
   margin: auto;
   border-radius: 2px;
   max-width: 20em;
+  white-space: nowrap;
 }
 
 .center {
@@ -18,6 +19,7 @@ body,html{
   height: 55%;
   
 }
+
 
 header{
     width: 100%;
@@ -44,7 +46,12 @@ h1.title{
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center
+	text-align: center;
+}
+
+h1.child{
+	align-items: center;
+	text-align: center;
 }
 
 a{
