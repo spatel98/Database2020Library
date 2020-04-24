@@ -31,7 +31,7 @@
 	<img class="center" src="./img/bullBook.png" />
 	
 	<div class="entry-title-wrap">
-		<button type="button" class="btn btn-success btn-block" onclick="redir()">Add New Book</button>
+		<button type="button" class="btn btn-success btn-block"  onclick="redir()">Add New Book</button>
 	</div>
 	
 	<script>
@@ -79,7 +79,7 @@
                 <td><%=rs.getString("ReportDate") %></td>
                 <td><%=rs.getString("ItemCount") %></td>
                 <td> 
-                	<a href='TableEdit.jsp?u=<%=rs.getString("BookId") %>' class="btn btn-warning">Edit</a>
+                	<a href='TableEdit.jsp?u=<%=rs.getString("BookId") %>' class="btn btn-warning" style ="color:white">Edit</a>
                 	<a href='TableDelete.jsp?d=<%=rs.getString("BookId") %>' class="btn btn-danger">Delete</a>
                 </td>
                 

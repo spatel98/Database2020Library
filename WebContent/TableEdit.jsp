@@ -5,6 +5,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="./css/TableEdit.css"/>
 <title>Edit page</title>
 </head>
@@ -67,7 +68,7 @@ con=(Connection)DriverManager.getConnection(host,"root","1234");
 			}
 		%>
 		<button type="submit" class="btn btn-warning">Update</button>
-		<a href = "EmployeeHome.jsp" class="btn btn-default">Back</a>
+		<a href="EmployeeHome.jsp" class="btn btn-primary">Back</a>
 	</form>
 </div>
 </body>

@@ -14,7 +14,7 @@
                	<form action="" method="post">
 				<div class="form-group">
 					<label>Title</label>
-					<input type="text" class="form-control" name="title" placeholder="Title"/>
+					<input type="text" class="form-control" name="title" placeholder="Enter Title"/>
 				</div>
 				<div class="form-group">
 					<label>Author</label>
@@ -42,9 +42,9 @@
 				</div>
 				<div class="form-group">
 					<label>Item Count</label>
-					<input type="text" class="form-control" name="count" placeholder="Enter Count"/>
+					<input type="text" class="form-control" name="count" placeholder="Enter Item Count"/>
 				</div>
-				<button type="button" class="btn btn-warning">Submit</button>
+				<button type="button" class="btn btn-warning" style="color:white; background:green; border: none;">Submit</button>
 				<a href="EmployeeHome.jsp" class="btn btn-primary">Back</a>
 				
 			</form>
