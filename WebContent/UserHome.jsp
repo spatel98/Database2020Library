@@ -8,12 +8,16 @@
     <%@page import="java.sql.*"%>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./css/navbar.css"/>
+     <link rel="stylesheet" type="text/css" href="./css/favorite.css"/>
+     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
 </head>
 <header>
     <nav>
         <ul>
             <li><a href="UserHome.jsp">Home</a></li>
             <li><a href="UserSearch.jsp">Search</a></li>
+            <li><a href="FavoriteBooks.jsp">Favorite Books</a></li>
             <li><form action="LogoutServlet" method="post">
 					<input type="submit" value="Logout" >
 				</form>
@@ -48,6 +52,7 @@
              <th>ItemLocation</th>
              <th>ReportDate</th>
              <th>ItemCount</th>
+             <th></th>
           </tr>
       </thead>
       <tbody>
@@ -64,6 +69,9 @@
                 <td><%=rs.getString("ItemLocation") %></td>
                 <td><%=rs.getString("ReportDate") %></td>
                 <td><%=rs.getString("ItemCount") %></td>
+                <td> 
+                	<a href='AddFavoriteBook.jsp?f=<%=rs.getString("BookId") %>' class="btn"> <span class="fa fa-star"></span></a>
+                </td>
             </tr>
             <%}%>
            </tbody>

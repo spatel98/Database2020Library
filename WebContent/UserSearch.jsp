@@ -14,6 +14,7 @@
         <ul>
             <li><a href="UserHome.jsp">Home</a></li>
             <li><a href="UserSearch.jsp">Search</a></li>
+            <li><a href="FavoriteBooks.jsp">Favorite Books</a></li>
             <li><form action="LogoutServlet" method="post">
 					<input type="submit" value="Logout" >
 				</form>
