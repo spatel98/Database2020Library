@@ -42,7 +42,7 @@
         Connection con=(Connection)DriverManager.getConnection(
             "jdbc:mysql://localhost:3306/mylibrary","root","1234");
         Statement st=con.createStatement();
-        ResultSet rs=st.executeQuery("select l.Title, l.Author, l.PublicationYear, l.Genre from users u inner join favoritebooks f on f.UId = u.UId inner join library l on l.BookId = f.BookId WHERE u.UId = " + user.getId() + ";");
+        ResultSet rs=st.executeQuery("select f.FavBookId, l.Title, l.Author, l.PublicationYear, l.Genre from users u inner join favoritebooks f on f.UId = u.UId inner join library l on l.BookId = f.BookId WHERE u.UId = " + user.getId() + ";");
     %><table border=1 style= "text-align:center; width: 70%; margin-left:auto;margin-right:auto;"> 
       <thead>
           <tr>
@@ -50,6 +50,7 @@
              <th>Author</th>
              <th>Publication Year</th>
              <th>Genre</th>
+             <th></th>
           </tr>
       </thead>
       <tbody>
@@ -61,6 +62,9 @@
                 <td><%=rs.getString("Author") %></td>
                 <td><%=rs.getString("PublicationYear") %></td>
                 <td><%=rs.getString("Genre") %></td>
+                <td> 
+                	<a href='FavoriteBookDelete.jsp?fd=<%=rs.getString("FavBookId") %>' class="btn btn-danger">Delete</a>
+                </td>
             <%}%>
            </tbody>
         </table><br>
