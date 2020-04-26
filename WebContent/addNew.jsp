@@ -11,7 +11,7 @@
     <body>
         <div>
                <h1>Add a New Book</h1>
-               	<form action="" method="post">
+               	<form action="AddNewBookServlet" method="post">
 				<div class="form-group">
 					<label>Title</label>
 					<input type="text" class="form-control" name="title" placeholder="Enter Title"/>
@@ -44,7 +44,7 @@
 					<label>Item Count</label>
 					<input type="text" class="form-control" name="count" placeholder="Enter Item Count"/>
 				</div>
-				<button type="button" class="btn btn-warning" style="color:white; background:green; border: none;">Submit</button>
+				<input type="submit" value="submit">
 				<a href="EmployeeHome.jsp" class="btn btn-primary">Back</a>
 				
 			</form>
