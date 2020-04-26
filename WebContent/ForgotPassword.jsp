@@ -16,6 +16,7 @@
                         <p>Confirm Password</p>
                         <input type = "password" name = "confirmPassword" placeholder="Confirm Password">                        
                         <input type = "submit" name = "" value="Submit">
+                        <a href="UserLogin.html"> Back to User Login</a>
                     </form>
 
             </div>    
